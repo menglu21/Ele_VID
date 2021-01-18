@@ -37,7 +37,7 @@ cd EgammaWork/ElectronNtupler/test
 cmsRun runElectrons_VID_CutBased_Summer16_80X_demo.py
 ```
 
-##``the output is like following``:
+``the output is like following``:
 ```
 Begin processing the 64th record. Run 1, Event 381641, LumiSection 256 at 18-Jan-2021 07:53:45.361 CET
 MENG test---->>>ele size---->>> 2ele pt---->>> 83.220009
@@ -103,4 +103,10 @@ DEBUG CutFlow, the result with cut GsfEleFull5x5SigmaIEtaIEtaCut_0 masked out
    8                               GsfEleConversionVetoCut_0    0        1.000000          1
    9                                  GsfEleMissingHitsCut_0    0        0.000000          1
 ```
-##``the illustraion of the output``
+``the illustraion of the output``:
+``ele size---->>> 2`` means this event has two electrons
+``ele pt---->>> 83.220009`` means the pt of the first electron
+``IdBit:2`` each electron has one Id bit
+``CutFlow name= cutBasedElectronID-Summer16-80X-V1-medium`` means the id in file ``cutBasedElectronID_Summer16_80X_V1_cff.py`` which contains several ids in 80X
+``Meng test--->>>1019`` the 1019 means the bits of the ten cutflow, i.e., 1111111011(index 0 is the rightmost bit)
+
