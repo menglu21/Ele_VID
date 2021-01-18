@@ -4,15 +4,12 @@ Learning the Ele VID method and correlated information, follow https://twiki.cer
 
 Getting the code
 //install release
-''
+```
 scram project -n CMSSW-8-0-26-p1-VID CMSSW CMSSW_8_0_26_patch1
-
 cd CMSSW-8-0-26-p1-VID/src  
-
 cmsenv
-
 voms-proxy-init -voms cms
-''
+```
 //copy needed cmssw code
 
 git cms-init
