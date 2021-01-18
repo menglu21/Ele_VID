@@ -37,7 +37,7 @@ cd EgammaWork/ElectronNtupler/test
 cmsRun runElectrons_VID_CutBased_Summer16_80X_demo.py
 ```
 
-<font color=Blue>the output is like following</font>:
+##``the output is like following``:
 ```
 Begin processing the 64th record. Run 1, Event 381641, LumiSection 256 at 18-Jan-2021 07:53:45.361 CET
 MENG test---->>>ele size---->>> 2ele pt---->>> 83.220009
@@ -103,4 +103,4 @@ DEBUG CutFlow, the result with cut GsfEleFull5x5SigmaIEtaIEtaCut_0 masked out
    8                               GsfEleConversionVetoCut_0    0        1.000000          1
    9                                  GsfEleMissingHitsCut_0    0        0.000000          1
 ```
-<span style="color:red">the illustraion of the output</span>
+##``the illustraion of the output``
