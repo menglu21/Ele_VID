@@ -19,3 +19,21 @@ cd EgammaWork/
 git checkout ntupler_and_VID_demos_8.0.3
 cd ../
 ```
+
+and change the input rootfile:
+```
+inputFilesMiniAOD = cms.untracked.vstring('file:/eos/cms/store/mc/RunIISummer16MiniAODv2/DY2JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/E0976CCD-33BE-E611-879D-E41D2D08DFE0.root'
+    )
+```
+then cp the ``ElectronNtuplerVIDDemo.cc`` to the ``plugins`` directory, 
+```
+cd $CMSSW_BASE/src
+scram b
+```
+
+In order to check that everything is ok, run the demo ntuplizer:
+```
+cd EgammaWork/ElectronNtupler/test
+cmsRun runElectrons_VID_CutBased_Summer16_80X_demo.py
+```
+
